@@ -79,8 +79,8 @@ WSGI_APPLICATION = 'myportfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME':'djangoportfolio',
-        'USER': 'claudiachurch',
+        'NAME':'djangoportfolio2',
+        'USER': 'postgres',
         'Password': 'tiger7Dragon',
         'Host': 'localhost',
         'Port': '5432'
@@ -141,6 +141,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 try:
-    from . local_settings import *
+    from.local_settings import *
 except ImportError:
     pass
