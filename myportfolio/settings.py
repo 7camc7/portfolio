@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-nz0$rf9_4#(r5e7=5j(m6$ul&0d#!+==-zdn5j2_zr5spf&@x^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -141,6 +141,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 try:
-    from.local_settings import *
+    from . local_settings import *
 except ImportError:
     pass
