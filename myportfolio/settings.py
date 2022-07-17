@@ -79,8 +79,8 @@ WSGI_APPLICATION = 'myportfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME':'djangouser',
-        'USER': 'django',
+        'NAME':'djangoportfolio',
+        'USER': 'claudiachurch',
         'Password': 'tiger7Dragon',
         'Host': 'localhost',
         'Port': '5432'
@@ -139,7 +139,8 @@ MEDIA_URL = '/media/' #where soemone accesses images
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
 try:
-    from. local_settings import *
+    from . local_settings import *
 except ImportError:
     pass
